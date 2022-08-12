@@ -26,6 +26,12 @@ import ProductList from "./components/ProductList.vue";
     background-color: #0095ff;
   }
 }
+.btn-green {
+  background-color: #79dc63;
+  &:hover {
+    background-color: #ff0000;
+  }
+}
 .container {
   display: flex;
   flex-wrap: wrap;

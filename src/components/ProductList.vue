@@ -1,16 +1,22 @@
 <template>
   <section class="container">
-    <h1>Produkt dnia</h1>
-    <div class="item-list">
-      <single-product v-if="productOfTheDay" :product="productOfTheDay"/>
+    <div class="section__product" v-if="productOfTheDay">
+      <h1>Produkt dnia</h1>
+      <div class="item-list">
+        <single-product  :product="productOfTheDay"/>
+      </div>
     </div>
-    <h1>Wyprzedaż</h1>
-    <div class="item-list">
-      <single-product v-if="bestSales" v-for="product in bestSales" :product="product"/>
+    <div class="section__product" v-if="bestSales">
+      <h1>Wyprzedaż</h1>
+      <div class="item-list">
+        <single-product  v-for="product in bestSales" :product="product"/>
+      </div>
     </div>
-    <h1>Wybrane dla Ciebie</h1>
-    <div class="item-list">
-      <single-product v-if="recommendedForYou" v-for="product in recommendedForYou" :product="product"/>
+    <div class="section__product" v-if="recommendedForYou">
+      <h1>Wybrane dla Ciebie</h1>
+      <div class="item-list">
+        <single-product  v-for="product in recommendedForYou" :product="product"/>
+      </div>
     </div>
   </section>
 </template>
@@ -21,7 +27,7 @@ import SingleProduct from "../components/singleProduct.vue";
 
 export default {
   name: "ProductList",
-  components: {SingleProduct, Product},
+  components: {SingleProduct},
   data() {
     return {
       bestSales: [],
@@ -44,11 +50,9 @@ export default {
           if (data['product-of-a-day']) {
             this.productOfTheDay = data['product-of-a-day'];
           }
-          console.log(this.productOfTheDay)
           if (data['recommended-for-you']) {
             this.recommendedForYou = data['recommended-for-you'];
           }
-          console.log(data);
         })
   }
 }
@@ -63,6 +67,19 @@ export default {
   justify-content: center;
   width: 1080px;
   margin: 0 auto;
+}
+.section__product {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgba(56, 72, 191, 0.53);
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 </style>

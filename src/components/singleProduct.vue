@@ -18,15 +18,16 @@
              class="warning-text">{{ product.price.regular / 100 }} zł</s>
         </p>
       </div>
-      <div class="product__box__price">
+      <div>
         <p>Stan magazynowy: {{ product.amount }}</p>
       </div>
       <div>
         Ocena: {{ product.rating }}
       </div>
       <div class="product__box__button">
-        <button class="btn">Dodaj do koszyka</button>
-        <button class="btn">Dodaj do listy życzeń</button>
+        <button class="btn" >Dodaj do koszyka</button>
+        <button class="btn btn-green" v-if="product['added-to-wishlist']" disabled>Na liście życzeń</button>
+        <button class="btn" v-else  >Dodaj do listy życzeń</button>
       </div>
     </div>
   </div>
@@ -53,6 +54,7 @@ export default {
   margin: 20px;
   border-radius: 5px;
   box-shadow: 0px 7px 11px -6px rgba(66, 68, 90, 1);
+  width: 300px;
 
   .product__box__title {
     color: #0062ff;
@@ -73,7 +75,6 @@ export default {
       border-radius: 5px;
       margin: 0 auto;
     }
-
   }
 }
 

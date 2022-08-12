@@ -20,8 +20,9 @@
         Ocena: {{ product.rating }}
       </div>
       <div class="product__box__button">
-        <button class="btn" @click="addToCart(product)">Dodaj do koszyka</button>
-        <button class="btn" @click="addToCart(product)">Dodaj do listy życzeń</button>
+        <button class="btn" >Dodaj do koszyka</button>
+        <button v-if='product.added-to-wishlist' disabled>Na liście życzeń</button>
+        <button v-else class="btn" >Dodaj do listy życzeń</button>
     </div>
   </div>
 </template>
@@ -33,14 +34,9 @@ export default {
   props: {
     productList: Array
   },
-  created() {
-    console.log(this.productList)
-  }
 }
 </script>
 
 <style lang="scss" scoped>
-.product__box {
-  width: 300px;
-}
+
 </style>
