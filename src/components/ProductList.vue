@@ -3,26 +3,25 @@
     <div class="section__product" v-if="productOfTheDay">
       <h1>Produkt dnia</h1>
       <div class="item-list">
-        <single-product  :product="productOfTheDay"/>
+        <single-product :product="productOfTheDay"/>
       </div>
     </div>
     <div class="section__product" v-if="bestSales">
       <h1>Wyprzedaż</h1>
       <div class="item-list">
-        <single-product  v-for="product in bestSales" :product="product"/>
+        <single-product v-for="product in bestSales" :product="product"/>
       </div>
     </div>
     <div class="section__product" v-if="recommendedForYou">
       <h1>Wybrane dla Ciebie</h1>
       <div class="item-list">
-        <single-product  v-for="product in recommendedForYou" :product="product"/>
+        <single-product v-for="product in recommendedForYou" :product="product"/>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-import Product from "../components/Product.vue";
 import SingleProduct from "../components/singleProduct.vue";
 
 export default {
@@ -68,6 +67,7 @@ export default {
   width: 1080px;
   margin: 0 auto;
 }
+
 .section__product {
   display: flex;
   flex-wrap: wrap;
@@ -77,6 +77,7 @@ export default {
   margin: 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 1px rgba(56, 72, 191, 0.53);
+
   h1 {
     font-size: 3rem;
   }

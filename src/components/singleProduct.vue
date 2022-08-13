@@ -5,10 +5,10 @@
         <img :src="product.image" alt="{{ product.name }}">
       </div>
       <div v-if="product.badges" class="product__box__title">
-        <h1 >{{ product.name }}</h1>
+        <h1>{{ product.name }}</h1>
         <span v-if="product.badges['new'] === true" class="badge">Nowość</span>
         <span v-if="product.badges['collection-sale'] === true" class="badge badge-red">Wyprzedaż</span>
-          <span v-if="product.badges['last-items'] === true" class="badge badge-blue">Ostatnie sztuki</span>
+        <span v-if="product.badges['last-items'] === true" class="badge badge-blue">Ostatnie sztuki</span>
 
       </div>
       <div v-if="product.price">
@@ -25,9 +25,9 @@
         Ocena: {{ product.rating }}
       </div>
       <div class="product__box__button">
-        <button class="btn" >Dodaj do koszyka</button>
+        <button class="btn">Dodaj do koszyka</button>
         <button class="btn btn-green" v-if="product['added-to-wishlist']" disabled>Na liście życzeń</button>
-        <button class="btn" v-else  >Dodaj do listy życzeń</button>
+        <button class="btn" v-else>Dodaj do listy życzeń</button>
       </div>
     </div>
   </div>
@@ -61,6 +61,7 @@ export default {
     display: flex;
     flex-direction: column;
     min-width: 250px;
+
     h1 {
       text-align: center;
     }
