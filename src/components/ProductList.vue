@@ -2,19 +2,19 @@
   <section class="container">
     <div class="section__product" v-if="productOfTheDay">
       <h1>Produkt dnia</h1>
-      <div class="item-list">
+      <div class="items-list">
         <single-product :product="productOfTheDay"/>
       </div>
     </div>
     <div class="section__product" v-if="bestSales">
       <h1>Wyprzedaż</h1>
-      <div class="item-list">
+      <div class="items-list">
         <single-product v-for="product in bestSales" :product="product"/>
       </div>
     </div>
     <div class="section__product" v-if="recommendedForYou">
       <h1>Wybrane dla Ciebie</h1>
-      <div class="item-list">
+      <div class="items-list">
         <single-product v-for="product in recommendedForYou" :product="product"/>
       </div>
     </div>
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.item-list {
+.items-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;

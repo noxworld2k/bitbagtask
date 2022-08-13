@@ -24,7 +24,7 @@
       <div>
         Ocena: {{ product.rating }}
       </div>
-      <div class="product__box__button">
+      <div>
         <button class="btn">Dodaj do koszyka</button>
         <button class="btn btn-green" v-if="product['added-to-wishlist']" disabled>Na liście życzeń</button>
         <button class="btn" v-else>Dodaj do listy życzeń</button>
