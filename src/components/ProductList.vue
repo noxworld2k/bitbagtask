@@ -3,19 +3,22 @@
     <div class="section__product" v-if="productOfTheDay">
       <h1>Produkt dnia</h1>
       <div class="items-list">
-        <single-product :product="productOfTheDay"/>
+        <single-product :product="productOfTheDay" />
       </div>
     </div>
     <div class="section__product" v-if="bestSales">
       <h1>Wyprzedaż</h1>
       <div class="items-list">
-        <single-product v-for="product in bestSales" :product="product"/>
+        <single-product v-for="product in bestSales" :product="product" />
       </div>
     </div>
     <div class="section__product" v-if="recommendedForYou">
       <h1>Wybrane dla Ciebie</h1>
       <div class="items-list">
-        <single-product v-for="product in recommendedForYou" :product="product"/>
+        <single-product
+          v-for="product in recommendedForYou"
+          :product="product"
+        />
       </div>
     </div>
   </section>
@@ -26,35 +29,30 @@ import SingleProduct from "../components/singleProduct.vue";
 
 export default {
   name: "ProductList",
-  components: {SingleProduct},
+  components: { SingleProduct },
   data() {
     return {
       bestSales: [],
       productOfTheDay: {},
       recommendedForYou: [],
-      productList: {
-        'best-sales': [],
-        'product-of-a-day': {},
-        'recommended-for-you': [],
-      }
-    }
+    };
   },
   mounted() {
-    fetch('http://localhost:8082/products')
-        .then(response => response.json())
-        .then(data => {
-          if (data['best-sales']) {
-            this.bestSales = data['best-sales'];
-          }
-          if (data['product-of-a-day']) {
-            this.productOfTheDay = data['product-of-a-day'];
-          }
-          if (data['recommended-for-you']) {
-            this.recommendedForYou = data['recommended-for-you'];
-          }
-        })
-  }
-}
+    fetch("http://localhost:8082/products")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data["best-sales"]) {
+          this.bestSales = data["best-sales"];
+        }
+        if (data["product-of-a-day"]) {
+          this.productOfTheDay = data["product-of-a-day"];
+        }
+        if (data["recommended-for-you"]) {
+          this.recommendedForYou = data["recommended-for-you"];
+        }
+      });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -82,5 +80,4 @@ export default {
     font-size: 3rem;
   }
 }
-
 </style>

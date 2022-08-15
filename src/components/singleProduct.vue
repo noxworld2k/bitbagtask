@@ -15,7 +15,9 @@
         <p>
           Cena: {{ product.price.current / 100 }} zł
           <s v-if="product.price.current < product.price.regular"
-             class="warning-text">{{ product.price.regular / 100 }} zł</s>
+             class="warning-text">
+            {{ product.price.regular / 100 }} zł
+          </s>
         </p>
       </div>
       <div>
@@ -38,9 +40,9 @@ export default {
   name: "singleProduct",
   props: {
     elementName: String,
-    product: Object,
+    product: Object
   }
-}
+};
 </script>
 
 <style lang="scss">
