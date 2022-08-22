@@ -1,0 +1,104 @@
+{
+  "uuid": "b63bbb87-6f74-4956-8078-10aff5e2b003",
+  "lastMigration": 22,
+  "name": "Zadanie frontend API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 8082,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "22f489c3-607d-4c77-b110-7e3a458c3447",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "products",
+      "responses": [
+        {
+          "uuid": "23698ee1-3859-41d6-b0cb-5b70035d6332",
+          "body": "{\n  \"product-of-a-day\": {\n    \"image\": \"https://loremflickr.com/240/160\",\n    \"name\": \"Yellow hat\",\n    \"price\": {\n      \"regular\": 5499,\n      \"current\": 4999\n    },\n    \"amount\": 120,\n    \"rating\": 5,\n    \"badges\": {\n      \"new\": true,\n      \"collection-sale\": false,\n      \"last-items\": false\n    },\n    \"added-to-wishlist\": false\n  },\n  \"best-sales\": [\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Blue good jeans\",\n      \"price\": {\n        \"regular\": 14999,\n        \"current\": 10599\n      },\n      \"amount\": 25,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Best T-shirt ever\",\n      \"price\": {\n        \"regular\": 12599,\n        \"current\": 2599\n      },\n      \"amount\": 3,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": true,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Best Shoes ever\",\n      \"price\": {\n        \"regular\": 24999,\n        \"current\": 7999\n      },\n      \"amount\": 1,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": true,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Red sporty shoes\",\n      \"price\": {\n        \"regular\": 17999,\n        \"current\": 17999\n      },\n      \"amount\": 23,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Lime-coloured jeans\",\n      \"price\": {\n        \"regular\": 7999,\n        \"current\": 6999\n      },\n      \"amount\": 11,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Lime-coloured shoes\",\n      \"price\": {\n        \"regular\": 9999,\n        \"current\": 8999\n      },\n      \"amount\": 2,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Just jeans\",\n      \"price\": {\n        \"regular\": 7999,\n        \"current\": 7999\n      },\n      \"amount\": 25,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Green Cap\",\n      \"price\": {\n        \"regular\": 1299,\n        \"current\": 1299\n      },\n      \"amount\": 25,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Red Cap\",\n      \"price\": {\n        \"regular\": 1299,\n        \"current\": 1299\n      },\n      \"amount\": 23,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Yellow Cap\",\n      \"price\": {\n        \"regular\": 1599,\n        \"current\": 1299\n      },\n      \"amount\": 19,\n      \"rating\": 3,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    }\n  ],\n  \"recommended-for-you\": [\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Red carpet\",\n      \"price\": {\n        \"regular\": 12499,\n        \"current\": 11499\n      },\n      \"amount\": 2,\n      \"rating\": 3,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Green socks\",\n      \"price\": {\n        \"regular\": 599,\n        \"current\": 599\n      },\n      \"amount\": 3,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": true,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Yellow Hoodie\",\n      \"price\": {\n        \"regular\": 24999,\n        \"current\": 24999\n      },\n      \"amount\": 10,\n      \"rating\": 0,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": true,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"The yellow trousers\",\n      \"price\": {\n        \"regular\": 12999,\n        \"current\": 12999\n      },\n      \"amount\": 15,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Red hat\",\n      \"price\": {\n        \"regular\": 7999,\n        \"current\": 7999\n      },\n      \"amount\": 11,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Just the cap\",\n      \"price\": {\n        \"regular\": 9999,\n        \"current\": 8999\n      },\n      \"amount\": 25,\n      \"rating\": 2,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"The shorts\",\n      \"price\": {\n        \"regular\": 7999,\n        \"current\": 6999\n      },\n      \"amount\": 25,\n      \"rating\": 3,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Batman suit\",\n      \"price\": {\n        \"regular\": 500099,\n        \"current\": 500099\n      },\n      \"amount\": 1,\n      \"rating\": 5,\n      \"badges\": {\n        \"new\": true,\n        \"collection-sale\": false,\n        \"last-items\": true\n      },\n      \"added-to-wishlist\": true\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Spider-man suit\",\n      \"price\": {\n        \"regular\": 1299,\n        \"current\": 999\n      },\n      \"amount\": 5000,\n      \"rating\": 2,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": false\n    },\n    {\n      \"image\": \"https://loremflickr.com/240/160\",\n      \"name\": \"Yellow T-Shirt\",\n      \"price\": {\n        \"regular\": 1599,\n        \"current\": 1299\n      },\n      \"amount\": 19,\n      \"rating\": 4,\n      \"badges\": {\n        \"new\": false,\n        \"collection-sale\": false,\n        \"last-items\": false\n      },\n      \"added-to-wishlist\": true\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "max-age=0, must-revalidate, private"
+            },
+            {
+              "key": "Date",
+              "value": "Tue, 12 Jul 2022 20:14:42 GMT"
+            },
+            {
+              "key": "Expires",
+              "value": "Tue, 12 Jul 2022 20:14:42 GMT"
+            },
+            {
+              "key": "Link",
+              "value": "rel=\"http://www.w3.org/ns/hydra/core#apiDocumentation\""
+            }
+          ],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
